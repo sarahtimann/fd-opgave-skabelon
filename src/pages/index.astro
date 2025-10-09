@@ -1,8 +1,26 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Hero from "@components/Hero.astro";
+import Box from "@components/Box.astro";
+
+import employees from "@data/employees.json";
+import DynamicImage from "@components/helpers/DynamicImage.astro";
+import ValueSection from "@components/ValueSection.astro";
+import Newsletter from "@components/Newsletter.astro";
+
+console.log(employees)
 ---
 
 <Layout>
   <Hero />
+  {employees.map((employee) => (
+  <DynamicImage
+    imagePath={employee.img}
+    altText={employee.name}
+    width={200}
+    height={200}
+  />
+))}
+  <Box />
+  <Newsletter
 </Layout>

@@ -1,0 +1,44 @@
+---
+import coreValuesData from "@data/coreValues.json";
+console.log(coreValuesData);
+
+import Box from "./Box.astro";
+---
+
+<Box />
+
+<div class="box">
+  <h2>{coreValuesData.title}</h2>
+  <p>{coreValuesData.subtitle}</p>
+  <ul>
+  {coreValuesData.values.map((value) => (
+      <li>{value.description}</li>
+    <a href="{value.link.url}">{value.link.text}</a>
+    ))}
+</ul>
+</div>
+
+<style>
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    ul {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+    }
+    li {
+        margin-bottom: 0.5rem;
+    }
+    .box {
+
+        border: 2px solid #ccc;
+        padding: 1rem;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+</style>
