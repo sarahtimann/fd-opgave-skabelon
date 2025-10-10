@@ -7,7 +7,7 @@
     <p>AskExperts</p>
         <ul role="list">
         <li><a href="/">Home</a></li>
-        <li><a href="/case-study">Case Study</a></li>
+        <li><a href="/case">Case Study</a></li>
         <li><a href="/team">Team</a></li>
         <li><a href="/about">About</a></li>
     </ul>
@@ -19,10 +19,11 @@
     header {
         background: rgba(27, 27, 27, 0.91);
         backdrop-filter: blur(10.5px);
+        padding-inline: max(.5rem, 25% - 25rem / 2);
     }
 
     nav > p {
-        color: #FFF;
+        color: var(--p-color-light);
         font-family: Cabin;
         font-size: 30px;
         font-style: normal;
@@ -50,7 +51,7 @@
     }
 
     li > a {
-        color: #FFF;
+        color: var(--p-color-light);
         font-size: 17.728px;
         font-style: normal;
         font-weight: 400;
@@ -61,7 +62,7 @@
     nav > a {
         padding: 4px 16px;
         border-radius: 20px;
-        background: #FFCC4A;
+        background: var(--bg-yellow);
     }
 
 </style>

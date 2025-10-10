@@ -1,7 +1,9 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Hero from "@components/Hero.astro";
-import Box from "@components/Box.astro";
+import CardLink from "@components/CardLink.astro";
+import IndexSection2 from "@components/IndexSection2.astro";
+import IndexSection3 from "@components/IndexSection3.astro";
 
 import employees from "@data/employees.json";
 import DynamicImage from "@components/helpers/DynamicImage.astro";
@@ -13,14 +15,16 @@ console.log(employees)
 
 <Layout>
   <Hero />
-  {employees.map((employee) => (
+  <!-- {employees.map((employee) => (
   <DynamicImage
     imagePath={employee.img}
     altText={employee.name}
     width={200}
     height={200}
   />
-))}
-  <Box />
-  <Newsletter
+))} -->
+  <IndexSection2 />
+  <IndexSection3 />
+  <CardLink />
+  <Newsletter />
 </Layout>

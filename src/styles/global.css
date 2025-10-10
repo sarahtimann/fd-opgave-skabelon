@@ -1,3 +1,18 @@
 /* Globale styles her */
 
 /* Fx farven på h1 osv. */
+
+:root {
+  --h1-color-light: #fff;
+  --h2-color-light: #fff;
+  --h2-color-dark: #181818;
+
+  --p-color-light: #fff;
+  --p-color-grey: #595566;
+  --p-color-dark: #181818;
+
+  --bg-yellow: #ffcc4a;
+  --bg-light: #fff;
+  --bg-dark: #181818;
+  --box-green: #4eaf4e;
+}
