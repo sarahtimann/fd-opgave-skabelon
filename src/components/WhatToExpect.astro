@@ -3,7 +3,7 @@ import IndexPhoto from "@assets/images/indexphoto.jpg";
 import { Image } from "astro:assets";
 ---
 
-<!-- <section>
+<!-- <section cla>
   <figure class="svg-img">
     <svg> </svg>
     <Image src={IndexPhoto} alt="Index photo" />
@@ -28,18 +28,49 @@ import { Image } from "astro:assets";
     </ul>
   </div>
 </section> -->
-<figure>
-  <img
-    src="https://images.unsplash.com/photo-1707730318002-6fbd8ecd6b77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTAxODE2MTF8&ixlib=rb-4.0.3&q=80&w=400"
-    alt=""
-  />
-</figure>
+<div class="figures">
+  <figure>
+    <Image src={IndexPhoto} alt="Index photo" class="index-photo" />
+  </figure>
+</div>
+<div class="text">
+  <p>WE'LL WORK WITH YOU</p>
+  <h2>What To Expect</h2>
+  <p>
+    Our collaboration is built on transparency, efficiency, and measurable
+    results. Together, we create strategies tailored to your unique needs and
+    goals.
+  </p>
+  <ul>
+    <li>
+      Collaborate to build actionable strategies that drive sustainable growth
+      and deliver tangible outcomes.
+    </li>
+    <li>
+      Identify opportunities to optimize processes and implement impactful
+      solutions with measurable results.
+    </li>
+  </ul>
+</div>
 
 <style>
   section {
     display: inline-flex;
     align-items: flex-start;
     gap: 82px;
+    background-color: var(--bg-light);
+    height:;
+  }
+
+  .figures {
+  }
+
+  .index-photo {
+    border-radius: 30px;
+  }
+
+  div {
+    display: grid;
   }
 
   :root {
@@ -50,7 +81,7 @@ import { Image } from "astro:assets";
     position: relative;
 
     &::before {
-      --square-count: 10;
+      --square-count: 15;
       --square-size: 1.34rem;
 
       --_square-size: var(--square-size, 1rem);
@@ -59,7 +90,7 @@ import { Image } from "astro:assets";
       z-index: -1;
       content: "";
       position: absolute;
-      inset: -30px -30px auto auto;
+      inset: -40px 950px auto auto;
       /*inline-size: calc(var(--square-count) * 1.34rem - .67rem);*/
       inline-size: calc(
         round(var(--_square-sum), var(--_square-size)) - var(--_square-half)
@@ -87,8 +118,8 @@ import { Image } from "astro:assets";
     &::after {
       content: "";
       position: absolute;
-      left: -1rem;
-      bottom: -1rem;
+      left: -2rem;
+      bottom: 20rem;
       background: green;
       width: 150px;
       height: 100px;
