@@ -1,9 +1,12 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Hero from "@components/Hero.astro";
-import CardLink from "@components/CardLink.astro";
+// import CardLink from "@components/CardLink.astro";
 import IndexSection2 from "@components/IndexSection2.astro";
 import IndexSection3 from "@components/IndexSection3.astro";
+import Experience from "@components/Experience.astro";
+import OurCoreValues from "@components/OurCoreValues.astro";  
+import Process from "@components/Process.astro";
 
 import employees from "@data/employees.json";
 import DynamicImage from "@components/helpers/DynamicImage.astro";
@@ -25,6 +28,9 @@ console.log(employees)
 ))} -->
   <IndexSection2 />
   <IndexSection3 />
-  <CardLink />
+  <Experience />
+  <OurCoreValues />
+  <Process />
+  <!-- <CardLink /> -->
   <Newsletter />
 </Layout>

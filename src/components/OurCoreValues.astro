@@ -1,0 +1,111 @@
+---
+import coreValues from "@data/coreValues.json";
+import ArrowIcon from "@icons/arrow--right.svg?url";
+import DynamicIcon from "./helpers/DynamicIcon.astro";
+// console.log(coreValues);
+---
+
+<section>
+    <p class="uppercase">Growing with our Clients</p>
+    <h2>{coreValues.title}</h2>
+    <p>{coreValues.subtitle}</p>
+    <!-- <a href="#0">{coreValues.buttonText}</a> -->
+<ul>
+    {
+        coreValues.values.map((value) => (
+            <li>
+                <DynamicIcon name={value.icon} width={50} height={50} class="top-icon" />
+                <h2>{value.title}</h2>
+                <p>{value.description}</p>
+                <div class="read-more">
+                    <a href="">
+                        Read More
+                        <img src={ArrowIcon} alt="arrow" />
+                    </a>
+                    </div>
+            </li>
+        ))
+    }
+    </ul>
+</section>
+
+
+<style>
+
+      h2:not(ul h2){
+      color: var(--p-color-light);
+      font-size: var(--h2-font-size);
+  }
+
+p:not(ul p) {
+      color: var(--p-color-light);
+      font-size: var(--p-font-size);
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+    section {
+        background-color: var(--bg-dark);
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 36px;
+    }
+    li {
+
+        padding: 36px 23px;
+        align-items: flex-start;
+        gap: 10px;
+        width: 226px;
+
+        border-radius: 20px;
+        border: 1px solid #EAEAEA;
+
+        background: #F5F5F5;
+        list-style: none;
+    }
+
+    h2 {
+        color: #181818;
+        font-family: Cabin;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 23.2px;
+    }
+
+    p {
+        color: var(--p-color-grey);
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23.6px;
+    }
+
+    .read-more a {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #181818;
+
+font-family: Lato;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 28.8px;
+    }
+
+    /* .top-icon {
+      background: black;
+    } */
+
+</style>

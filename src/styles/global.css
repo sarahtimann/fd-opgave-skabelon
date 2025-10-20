@@ -1,7 +1,5 @@
 /* Globale styles her */
 
-/* Fx farven på h1 osv. */
-
 :root {
   --h1-color-light: #fff;
   --h2-color-light: #fff;
@@ -13,6 +11,10 @@
 
   --bg-yellow: #ffcc4a;
   --bg-light: #fff;
+  --bg-gray: #f5f5f5;
   --bg-dark: #181818;
   --box-green: #4eaf4e;
+
+  --h2-font-size: 45px;
+  --p-font-size: 16px;
 }
