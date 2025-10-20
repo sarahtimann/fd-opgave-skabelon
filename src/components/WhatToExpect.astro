@@ -28,49 +28,61 @@ import { Image } from "astro:assets";
     </ul>
   </div>
 </section> -->
-<div class="figures">
-  <figure>
-    <Image src={IndexPhoto} alt="Index photo" class="index-photo" />
-  </figure>
-</div>
-<div class="text">
-  <p>WE'LL WORK WITH YOU</p>
-  <h2>What To Expect</h2>
-  <p>
-    Our collaboration is built on transparency, efficiency, and measurable
-    results. Together, we create strategies tailored to your unique needs and
-    goals.
-  </p>
-  <ul>
-    <li>
-      Collaborate to build actionable strategies that drive sustainable growth
-      and deliver tangible outcomes.
-    </li>
-    <li>
-      Identify opportunities to optimize processes and implement impactful
-      solutions with measurable results.
-    </li>
-  </ul>
-</div>
+<section>
+  <div class="figures">
+    <figure>
+      <Image src={IndexPhoto} alt="Index photo" class="index-photo" />
+    </figure>
+  </div>
+  <div class="text">
+    <p class="uppercase">We'll work with you</p>
+    <h2>What To Expect</h2>
+    <p>
+      Our collaboration is built on transparency, efficiency, and measurable
+      results. Together, we create strategies tailored to your unique needs and
+      goals.
+    </p>
+    <ul>
+      <li>
+        Collaborate to build actionable strategies that drive sustainable growth
+        and deliver tangible outcomes.
+      </li>
+      <li>
+        Identify opportunities to optimize processes and implement impactful
+        solutions with measurable results.
+      </li>
+    </ul>
+  </div>
+</section>
 
 <style>
   section {
-    display: inline-flex;
+    display: grid;
     align-items: flex-start;
     gap: 82px;
     background-color: var(--bg-light);
-    height:;
-  }
-
-  .figures {
+    grid-template-columns: auto 1fr;
+    margin: 100px; /* dette skal gøres globalt tænker jeg? */
   }
 
   .index-photo {
     border-radius: 30px;
   }
 
-  div {
-    display: grid;
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+  p {
+    font-family: Lato;
+    font-size: var(--p-font-size);
+    color: var(--p-color-dark);
+  }
+
+  h2 {
+    font-family: Cabin;
+    font-size: var(--h2-font-size);
+    color: var(--h2-color-dark);
   }
 
   :root {
@@ -90,7 +102,7 @@ import { Image } from "astro:assets";
       z-index: -1;
       content: "";
       position: absolute;
-      inset: -40px 950px auto auto;
+      inset: -40px 400px auto auto;
       /*inline-size: calc(var(--square-count) * 1.34rem - .67rem);*/
       inline-size: calc(
         round(var(--_square-sum), var(--_square-size)) - var(--_square-half)
@@ -119,10 +131,10 @@ import { Image } from "astro:assets";
       content: "";
       position: absolute;
       left: -2rem;
-      bottom: 20rem;
+      bottom: 17rem;
       background: green;
       width: 150px;
-      height: 100px;
+      height: 145px;
       border-radius: 10px;
       z-index: -1;
     }
