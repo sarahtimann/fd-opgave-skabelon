@@ -5,107 +5,110 @@ import DynamicIcon from "./helpers/DynamicIcon.astro";
 // console.log(coreValues);
 ---
 
-<section>
-    <p class="uppercase">Growing with our Clients</p>
-    <h2>{coreValues.title}</h2>
-    <p>{coreValues.subtitle}</p>
-    <!-- <a href="#0">{coreValues.buttonText}</a> -->
-<ul>
+<section class="full-bleed">
+  <p class="uppercase">Growing with our Clients</p>
+  <h2>{coreValues.title}</h2>
+  <p>{coreValues.subtitle}</p>
+  <a href="#0">{coreValues.button.text}</a>
+  <ul>
     {
-        coreValues.values.map((value) => (
-            <li>
-                <DynamicIcon name={value.icon} width={50} height={50} class="top-icon" />
-                <h2>{value.title}</h2>
-                <p>{value.description}</p>
-                <div class="read-more">
-                    <a href="">
-                        Read More
-                        <img src={ArrowIcon} alt="arrow" />
-                    </a>
-                    </div>
-            </li>
-        ))
+      coreValues.values.map((value) => (
+        <li>
+          <DynamicIcon
+            name={value.icon}
+            width={50}
+            height={50}
+            class="top-icon"
+          />
+          <h2>{value.title}</h2>
+          <p>{value.description}</p>
+          <div class="read-more">
+            <a href="">
+              Read More
+              <img src={ArrowIcon} alt="arrow" />
+            </a>
+          </div>
+        </li>
+      ))
     }
-    </ul>
+  </ul>
 </section>
 
-
 <style>
-
-      h2:not(ul h2){
-      color: var(--p-color-light);
-      font-size: var(--h2-font-size);
+  h2:not(ul h2) {
+    color: var(--p-color-light);
+    font-size: var(--h2-font-size);
   }
 
-p:not(ul p) {
-      color: var(--p-color-light);
-      font-size: var(--p-font-size);
+  p:not(ul p) {
+    color: var(--p-color-light);
+    font-size: var(--p-font-size);
   }
 
   .uppercase {
     text-transform: uppercase;
   }
 
-    section {
-        background-color: var(--bg-dark);
-    }
+  section {
+    background-color: var(--bg-dark);
+  }
 
-    ul {
-        display: flex;
-        flex-direction: row;
-        gap: 36px;
-    }
-    li {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 36px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 
-        padding: 36px 23px;
-        align-items: flex-start;
-        gap: 10px;
-        width: 226px;
+  li {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 20px;
+    gap: 12px;
+    width: 100%; /* fill the grid cell */
 
-        border-radius: 20px;
-        border: 1px solid #EAEAEA;
+    border-radius: 20px;
+    border: 1px solid #eaeaea;
 
-        background: #F5F5F5;
-        list-style: none;
-    }
+    background: #f5f5f5;
+  }
 
-    h2 {
-        color: #181818;
-        font-family: Cabin;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 23.2px;
-    }
+  h2 {
+    color: #181818;
+    font-family: Cabin;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+  }
 
-    p {
-        color: var(--p-color-grey);
-        font-family: Lato;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 23.6px;
-    }
+  p {
+    color: var(--p-color-grey);
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.6px;
+  }
 
-    .read-more a {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-    }
+  .read-more a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
 
-    a {
-        text-decoration: none;
-        color: #181818;
+  a {
+    text-decoration: none;
+    color: #181818;
 
-font-family: Lato;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: 28.8px;
-    }
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+  }
 
-    /* .top-icon {
+  /* .top-icon {
       background: black;
     } */
-
 </style>

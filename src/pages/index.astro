@@ -2,10 +2,10 @@
 import Layout from "@layouts/Layout.astro";
 import Hero from "@components/Hero.astro";
 // import CardLink from "@components/CardLink.astro";
-import IndexSection2 from "@components/IndexSection2.astro";
+import WhatToExpect from "@components/WhatToExpect.astro";
 import IndexSection3 from "@components/IndexSection3.astro";
 import Experience from "@components/Experience.astro";
-import OurCoreValues from "@components/OurCoreValues.astro";  
+import OurCoreValues from "@components/OurCoreValues.astro";
 import Process from "@components/Process.astro";
 
 import employees from "@data/employees.json";
@@ -13,7 +13,7 @@ import DynamicImage from "@components/helpers/DynamicImage.astro";
 import ValueSection from "@components/ValueSection.astro";
 import Newsletter from "@components/Newsletter.astro";
 
-console.log(employees)
+console.log(employees);
 ---
 
 <Layout>
@@ -26,7 +26,7 @@ console.log(employees)
     height={200}
   />
 ))} -->
-  <IndexSection2 />
+  <WhatToExpect />
   <IndexSection3 />
   <Experience />
   <OurCoreValues />
