@@ -2,17 +2,19 @@
 import experience from "@data/experience.json";
 ---
 
-<section>
-  <!-- {
-        experience.values.map((experience) => (
-            <div>
-                <p>{experience.}</p>
-            </div>
+<section class="full-bleed">
+  <div>
+    <!-- {
+      experience.values.map((experience) => (
+      <div>
+        <p>{experience.}</p>
+        </div>
         ))
-    } -->
-  <p>EXPERIENCE</p>
-  <h2>More than 25 years of experience</h2>
-  <p>3000+ our clients are insured around the World</p>
+        } -->
+    <p>EXPERIENCE</p>
+    <h2>More than 25 years of experience</h2>
+    <p>3000+ our clients are insured around the World</p>
+  </div>
   <div class="stats">
     <div class="stat" style="--percent: 85"></div>
     <div class="stat" style="--percent: 95"></div>
@@ -22,8 +24,14 @@ import experience from "@data/experience.json";
 
 <style>
   section {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
     background-color: var(--bg-yellow);
+    padding: 2rem;
   }
 
   h2 {
@@ -39,12 +47,13 @@ import experience from "@data/experience.json";
   }
 
   .stats {
+    display: flex;
     --bg-color: #ffcc4a;
     padding: 2rem;
-    display: flex;
     gap: 1rem;
-    width: min(400px, 100% - 1rem);
     background: var(--bg-color);
+    justify-content: center; /* center items inside stats */
+    align-items: center;
   }
 
   .stat {
@@ -80,6 +89,7 @@ import experience from "@data/experience.json";
       content: counter(count) "%";
       place-self: center;
       font-family: Cabin;
+      font-size: 30px;
     }
 
     &::before {
@@ -88,8 +98,8 @@ import experience from "@data/experience.json";
       border-radius: calc(Infinity * 1px);
       width: calc(var(--border-width) * 3);
       background: #000;
-      outline: 2px solid #fff;
-      outline-offset: -4px;
+      outline: 3px solid #fff;
+      outline-offset: 0px;
       offset-path: border-box;
       offset-distance: var(--p);
       offset-anchor: 50% calc(50% - var(--border-width) / 2);
