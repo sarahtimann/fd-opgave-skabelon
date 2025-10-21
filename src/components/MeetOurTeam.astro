@@ -49,6 +49,7 @@ import employees from "@data/employees.json";
     display: grid;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    overflow: hidden; /* ??? virker til at forhindre billederne ryger udenfor viewporten */
   }
 
   section > p,
@@ -66,6 +67,13 @@ import employees from "@data/employees.json";
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 3rem;
     margin-top: 2rem;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
   h2 {
