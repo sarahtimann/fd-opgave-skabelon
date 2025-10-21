@@ -16,7 +16,7 @@
 <style>
   article {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -26,7 +26,7 @@
 
     background-color: var(--bg-dark);
     font-size: 3rem;
-    padding: 3rem 5rem;
+    padding: 2rem 3rem;
     color: #fff;
     border-radius: 10px;
     background: #181818;
