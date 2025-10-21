@@ -1,9 +1,10 @@
 ---
-
+import hero from "../data/images/hero-about.jpg";
+import { Image } from "astro:assets";
 ---
 
 <section class="full-bleed">
-  <img src="/src/assets/images/hero-about.jpg" alt="" />
+  <Image src={hero} alt="" />
 </section>
 
 <style>
