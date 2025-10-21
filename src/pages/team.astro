@@ -5,12 +5,23 @@ import Footer from "@components/Footer.astro";
 
 import Hero3 from "@components/Hero3.astro";
 import MeetOurTeam from "@components/MeetOurTeam.astro";
+import HeroBgWrapper from "@components/helpers/HeroBgWrapper.astro";
 ---
 
 <title>Team</title>
 <Layout>
-  <!-- Team content would go here -->
+  <!-- <HeroBgWrapper imagePath="meetteam.jpg" class="full-bleed">
+    <article>
+      <h2>Meet Our Team</h2>
+    </article>
+  </HeroBgWrapper> -->
   <Hero3 />
   <MeetOurTeam />
   <Newsletter />
 </Layout>
+
+<style>
+  article {
+    height: 400px;
+  }
+</style>

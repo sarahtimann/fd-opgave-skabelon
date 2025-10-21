@@ -5,3 +5,17 @@
 <section class="full-bleed">
   <img src="/src/data/images/hero-team.jpg" alt="" />
 </section>
+
+<style>
+  .full-bleed {
+    grid-column: full-bleed-start / full-bleed-end;
+    display: grid;
+  }
+
+  .full-bleed > img {
+    grid-column: full-bleed-start / full-bleed-end !important;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+</style>
