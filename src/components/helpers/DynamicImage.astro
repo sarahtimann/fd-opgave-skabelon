@@ -3,4 +3,10 @@ const { imagePath, altText, class: className, width, height } = Astro.props;
 ---
 
 <!-- Render a plain <img> using the provided path. This avoids throwing errors if import.meta.glob lookup fails in dev. -->
-<img src={imagePath} alt={altText} class={className} width={width} height={height} />
+<img
+  src={imagePath}
+  alt={altText}
+  class={className}
+  width={width}
+  height={height}
+/>
