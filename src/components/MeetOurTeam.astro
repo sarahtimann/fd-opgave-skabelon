@@ -1,5 +1,5 @@
 ---
-import employees from "data/@employees.json";
+import employees from "@data/employees.json";
 ---
 
 <section>
@@ -13,51 +13,33 @@ import employees from "data/@employees.json";
   <div class="team-members">
     <div class="description">
       <img src="/src/data/images/sarah.webp" alt="" />
-      <h5>Sarah Jasmine</h5>
-      <p>
-        Driving innovation and leadership with a focus on strategic growth and
-        impactful decisions.
-      </p>
+      <h5>{employees[0].name}</h5>
+      <p>{employees[0].description}</p>
     </div>
     <div class="description">
       <img src="/src/data/images/john.webp" alt="" />
-      <h5>John Carter</h5>
-      <p>
-        Expert in operational efficiency, ensuring smooth processes and
-        exceptional team performance.
-      </p>
+      <h5>{employees[1].name}</h5>
+      <p>{employees[1].description}</p>
     </div>
     <div class="description">
       <img src="/src/data/images/daisy.webp" alt="" />
-      <h5>Daisy Stella</h5>
-      <p>
-        Inspiring creative solutions and forward-thinking approaches for
-        groundbreaking projects.
-      </p>
+      <h5>{employees[2].name}</h5>
+      <p>{employees[2].description}</p>
     </div>
     <div class="description">
       <img src="/src/data/images/maya.webp" alt="" />
-      <h5>Maya Elizabeth</h5>
-      <p>
-        Crafting tailored strategies to empower business success and maximize
-        market potential.
-      </p>
+      <h5>{employees[3].name}</h5>
+      <p>{employees[3].description}</p>
     </div>
     <div class="description">
       <img src="/src/data/images/ryan.webp" alt="" />
-      <h5>Ryan Jackson</h5>
-      <p>
-        Leading with vision and precision to align organizational goals with
-        long-term growth.
-      </p>
+      <h5>{employees[4].name}</h5>
+      <p>{employees[4].description}</p>
     </div>
     <div class="description">
       <img src="/src/data/images/lilly.webp" alt="" />
-      <h5>Lilly Victoria</h5>
-      <p>
-        Championing collaboration and excellence to drive meaningful change and
-        success.
-      </p>
+      <h5>{employees[5].name}</h5>
+      <p>{employees[5].description}</p>
     </div>
   </div>
 </section>
