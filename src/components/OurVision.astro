@@ -54,7 +54,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 4rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
@@ -82,15 +81,8 @@
 
   .text-content {
     flex: 1 1 400px;
+    padding-right: 4rem;
   }
-
-  /* li {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 1rem;
-    font-size: 1rem;
-    color: #595566;
-  } */
 
   ul {
     display: grid;
@@ -125,6 +117,7 @@
 
   figure {
     position: relative;
+    padding-top: 4rem;
 
     &::before {
       --square-count: 15;
@@ -136,7 +129,7 @@
       z-index: -1;
       content: "";
       position: absolute;
-      inset: -40px -60px auto auto;
+      inset: 10px -60px auto auto;
       /*inline-size: calc(var(--square-count) * 1.34rem - .67rem);*/
       inline-size: calc(
         round(var(--_square-sum), var(--_square-size)) - var(--_square-half)

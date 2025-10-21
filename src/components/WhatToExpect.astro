@@ -61,7 +61,7 @@ import { Image } from "astro:assets";
     align-items: flex-start;
     gap: 82px;
     background-color: var(--bg-light);
-    grid-template-columns: auto 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin: 100px; /* dette skal gøres globalt tænker jeg? */
   }
 
@@ -127,7 +127,7 @@ import { Image } from "astro:assets";
       z-index: -1;
       content: "";
       position: absolute;
-      inset: -40px 400px auto auto;
+      inset: -70px 230px auto auto;
       /*inline-size: calc(var(--square-count) * 1.34rem - .67rem);*/
       inline-size: calc(
         round(var(--_square-sum), var(--_square-size)) - var(--_square-half)
@@ -155,8 +155,8 @@ import { Image } from "astro:assets";
     &::after {
       content: "";
       position: absolute;
-      left: -2rem;
-      bottom: 17rem;
+      left: -2.5rem;
+      bottom: 10rem;
       background: green;
       width: 150px;
       height: 145px;
