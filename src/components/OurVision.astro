@@ -1,0 +1,138 @@
+---
+
+---
+
+<section>
+  <div class="text-content">
+    <p>Our Vision</p>
+    <h2>Turn your ideas into reality.</h2>
+    <p>
+      Capitalize on low hanging fruit to identify a ballpark value added
+      activity beta test. Override the digital divide with additional from
+      DevOps.
+    </p>
+    <ul>
+      <li>
+        Bring to the table win-win survival strategies to ensure proactive
+        domination. At the end of the day.
+      </li>
+      <li>
+        Capitalize on low hanging fruit to identify a ballpark value added
+        activity to beta test override the digital.
+      </li>
+    </ul>
+  </div>
+  <figure>
+    <img src="/src/data/images/ourvision.jpg" alt="" />
+  </figure>
+  <div class="number-container">
+    <div class="number-item">
+      <h2>1128+</h2>
+      <p>Successful Work</p>
+    </div>
+    <div class="number-item">
+      <h2>908+</h2>
+      <p>Team Members</p>
+    </div>
+    <div class="number-item">
+      <h2>258+</h2>
+      <p>Happy Customers</p>
+    </div>
+    <div class="number-item">
+      <h2>564+</h2>
+      <p>Creative Idea</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .text-content > p:first-of-type {
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: var(--h2-font-size);
+    font-family: Cabin;
+    color: var(--h2-color-dark);
+  }
+
+  p {
+    font-size: var(--p-font-size);
+    font-family: Lato;
+    color: var(--p-color-dark);
+  }
+
+  .text-content {
+    flex: 1 1 400px;
+  }
+
+  .number-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 200px));
+    margin-top: 4rem;
+    text-align: center;
+    flex-basis: 100%;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  figure {
+    position: relative;
+
+    &::before {
+      --square-count: 15;
+      --square-size: 1.34rem;
+
+      --_square-size: var(--square-size, 1rem);
+      --_square-half: calc(var(--square-size) / 2);
+      --_square-sum: calc(var(--square-count) * var(--square-size));
+      z-index: -1;
+      content: "";
+      position: absolute;
+      inset: -40px -60px auto auto;
+      /*inline-size: calc(var(--square-count) * 1.34rem - .67rem);*/
+      inline-size: calc(
+        round(var(--_square-sum), var(--_square-size)) - var(--_square-half)
+      );
+      aspect-ratio: 1;
+      background: linear-gradient(
+          135deg,
+          #be965d,
+          #976f40,
+          #c99b61,
+          #f0be7b,
+          #ffcb85,
+          #eebc79,
+          #c0935b,
+          #976f40
+        )
+        0 0 / 100% 100%;
+      mask:
+        var(--square-pattern) 0 0 / var(--_square-size) var(--_square-size),
+        var(--square-pattern) var(--_square-half) var(--_square-half) /
+          var(--_square-size) var(--_square-size);
+      /*clip-path: polygon(-3% 0%, 100% 0%, 100% 103%);*/
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 23rem;
+      bottom: 14rem;
+      background: green;
+      width: 150px;
+      height: 145px;
+      border-radius: 10px;
+      z-index: -1;
+    }
+  }
+</style>
