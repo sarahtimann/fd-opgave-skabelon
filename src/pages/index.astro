@@ -7,6 +7,7 @@ import IndexSection3 from "@components/IndexSection3.astro";
 import Experience from "@components/Experience.astro";
 import OurCoreValues from "@components/OurCoreValues.astro";
 import Process from "@components/Process.astro";
+import FinancialProjections from "@components/FinancialProjections.astro";
 
 import employees from "@data/employees.json";
 import DynamicImage from "@components/helpers/DynamicImage.astro";
@@ -16,6 +17,7 @@ import Newsletter from "@components/Newsletter.astro";
 console.log(employees);
 ---
 
+<title>Home</title>
 <Layout>
   <Hero />
   <!-- {employees.map((employee) => (
@@ -27,7 +29,7 @@ console.log(employees);
   />
 ))} -->
   <WhatToExpect />
-  <IndexSection3 />
+  <FinancialProjections />
   <Experience />
   <OurCoreValues />
   <Process />

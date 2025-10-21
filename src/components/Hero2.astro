@@ -8,10 +8,14 @@
 </section>
 
 <style>
-  /* .hero-content {
-    display: grid;
-    grid-template-columns:
-      [full-start] 1fr [content-start] minmax(0, 600px)
-      [middle] minmax(0, 600px) [content-end] 1fr [full-end];
-  } */
+  .full-bleed {
+    /* Fylder hele full-bleed området i grid */
+    grid-column: full-bleed-start / full-bleed-end;
+  }
+
+  .full-bleed img {
+    width: 100%; /* fylder sektionen */
+    height: auto;
+    display: block;
+  }
 </style>
