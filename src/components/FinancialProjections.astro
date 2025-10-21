@@ -4,20 +4,21 @@ import financialProjections from "@data/financialProjections.json";
 import DynamicIcon from "./helpers/DynamicIcon.astro";
 ---
 
-<!-- <section class="full-bleed"> --><!-- <h2>{financialProjections.title}</h2> -->
-<ul>
-  {
-    financialProjections.values.map((projection) => (
-      <li>
-        <DynamicIcon name={projection.icon} width={50} height={50} />
-        <h2>{projection.title}</h2>
-        <p>{projection.description}</p>
-        <a href="#0">{projection.buttonText}</a>
-      </li>
-    ))
-  }
-</ul>
-<!-- </section> -->
+<!-- <h2>{financialProjections.title}</h2> -->
+<section class="full-bleed">
+  <ul>
+    {
+      financialProjections.values.map((projection) => (
+        <li>
+          <DynamicIcon name={projection.icon} width={50} height={50} />
+          <h2>{projection.title}</h2>
+          <p>{projection.description}</p>
+          <a href="#0">{projection.buttonText}</a>
+        </li>
+      ))
+    }
+  </ul>
+</section>
 
 <style>
   /* ul {
@@ -35,12 +36,12 @@ li {
 
         background: #F5F5F5;
 } */
-
+  /* 
   :root {
     --content-width: 50rem;
-  }
+  } */
 
-  main {
+  /* main {
     padding-block: 4rem;
     display: grid;
     grid-template-columns:
@@ -77,8 +78,13 @@ li {
         }
       }
     }
+  } */
+
+  section {
+    display: grid;
   }
 
+  /* 
   ul {
     display: flex;
     gap: 1rem;
@@ -105,13 +111,9 @@ li {
       background-color: #181818;
       color: #ffcc4a;
     }
-
-    /* li::marker {
-    text-decoration: none;
   } */
-  }
 
-  h2,
+  /* h2,
   h3 {
     all: revert;
     color: #181818;
@@ -121,5 +123,5 @@ li {
 
   h2 {
     font-size: 2.8125rem;
-  }
+  } */
 </style>

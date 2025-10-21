@@ -1,0 +1,104 @@
+---
+
+---
+
+<section>
+  <p>Our Team</p>
+  <h2>We champion the bold to achieve the extraordinary</h2>
+  <p>
+    Our success stems from the synergy between dedicated teams and our valued
+    clients. We prioritize a company culture that fosters exceptional
+    productivity, ensures customer satisfaction, and promotes mutual respect
+    among all team members.
+  </p>
+  <div class="team-members">
+    <div class="description">
+      <img src="/src/data/images/sarah.webp" alt="" />
+      <h5>Sarah Jasmine</h5>
+      <p>
+        Driving innovation and leadership with a focus on strategic growth and
+        impactful decisions.
+      </p>
+    </div>
+    <div class="description">
+      <img src="/src/data/images/john.webp" alt="" />
+      <h5>John Carter</h5>
+      <p>
+        Expert in operational efficiency, ensuring smooth processes and
+        exceptional team performance.
+      </p>
+    </div>
+    <div class="description">
+      <img src="/src/data/images/daisy.webp" alt="" />
+      <h5>Daisy Stella</h5>
+      <p>
+        Inspiring creative solutions and forward-thinking approaches for
+        groundbreaking projects.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    display: grid;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  section > p:first-of-type {
+    text-transform: uppercase;
+  }
+
+  section > p,
+  section > h2 {
+    width: 620px;
+  }
+
+  .team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  img {
+    border-radius: 20px;
+  }
+
+  h2 {
+    font-family: Cabin;
+    font-size: var(--h2-font-size);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46.08px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-family: Lato;
+    font-size: var(--p-font-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.6px;
+    color: var(--p-color-dark);
+  }
+
+  h5 {
+    font-family: Cabin;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23.2px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--h2-color-dark);
+  }
+
+  div p,
+  div h5 {
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+</style>
