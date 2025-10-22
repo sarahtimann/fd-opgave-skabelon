@@ -1,5 +1,7 @@
 ---
 import employees from "@data/employees.json";
+import { Image } from "astro:assets";
+import sarah from "../data/images/sarah.webp";
 ---
 
 <section>
@@ -12,7 +14,7 @@ import employees from "@data/employees.json";
   </p>
   <div class="team-members">
     <div class="description">
-      <img src="/src/data/images/sarah.webp" alt="" />
+      <Image src={sarah} alt="Sarah" />
       <h5>{employees[0].name}</h5>
       <p>{employees[0].description}</p>
     </div>
