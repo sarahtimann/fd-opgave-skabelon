@@ -1,9 +1,10 @@
 ---
 import { Image } from "astro:assets";
-
 import sarah from "../data/images/sarah.webp";
 import john from "../data/images/john.webp";
 import daisy from "../data/images/daisy.webp";
+
+import employees from "@data/employees.json";
 ---
 
 <section>
@@ -18,27 +19,18 @@ import daisy from "../data/images/daisy.webp";
   <div class="team-members">
     <div class="description">
       <Image src={sarah} alt="Sarah" />
-      <h5>Sarah Jasmine</h5>
-      <p>
-        Driving innovation and leadership with a focus on strategic growth and
-        impactful decisions.
-      </p>
+      <h5>{employees[0].name}</h5>
+      <p>{employees[0].description}</p>
     </div>
     <div class="description">
       <Image src={john} alt="John" />
-      <h5>John Carter</h5>
-      <p>
-        Expert in operational efficiency, ensuring smooth processes and
-        exceptional team performance.
-      </p>
+      <h5>{employees[1].name}</h5>
+      <p>{employees[1].description}</p>
     </div>
     <div class="description">
       <Image src={daisy} alt="Daisy" />
-      <h5>Daisy Stella</h5>
-      <p>
-        Inspiring creative solutions and forward-thinking approaches for
-        groundbreaking projects.
-      </p>
+      <h5>{employees[2].name}</h5>
+      <p>{employees[2].description}</p>
     </div>
   </div>
 </section>

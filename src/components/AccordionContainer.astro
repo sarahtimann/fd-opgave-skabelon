@@ -3,7 +3,6 @@ import AccordionItem from "./AccordionItem.astro";
 import faq from "@data/faq.json";
 const { data, exclusive } = Astro.props;
 
-// normalize data: allow passing 'data' prop or fall back to faq.json
 const items = (data ?? faq.faq ?? faq) as any[];
 ---
 
