@@ -1,5 +1,7 @@
 ---
+import { Image } from "astro:assets";
 
+import ourVision from "@assets/images/ourvision.jpg";
 ---
 
 <section>
@@ -23,7 +25,7 @@
     </ul>
   </div>
   <figure>
-    <img src="/src/assets/images/ourvision.jpg" alt="" />
+    <Image src={ourVision} alt="Our vision" />
   </figure>
   <div class="number-container">
     <div class="number-item">

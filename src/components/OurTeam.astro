@@ -1,5 +1,9 @@
 ---
+import { Image } from "astro:assets";
 
+import sarah from "../data/images/sarah.webp";
+import john from "../data/images/john.webp";
+import daisy from "../data/images/daisy.webp";
 ---
 
 <section>
@@ -13,7 +17,7 @@
   </p>
   <div class="team-members">
     <div class="description">
-      <img src="/src/data/images/sarah.webp" alt="" />
+      <Image src={sarah} alt="Sarah" />
       <h5>Sarah Jasmine</h5>
       <p>
         Driving innovation and leadership with a focus on strategic growth and
@@ -21,7 +25,7 @@
       </p>
     </div>
     <div class="description">
-      <img src="/src/data/images/john.webp" alt="" />
+      <Image src={john} alt="John" />
       <h5>John Carter</h5>
       <p>
         Expert in operational efficiency, ensuring smooth processes and
@@ -29,7 +33,7 @@
       </p>
     </div>
     <div class="description">
-      <img src="/src/data/images/daisy.webp" alt="" />
+      <Image src={daisy} alt="Daisy" />
       <h5>Daisy Stella</h5>
       <p>
         Inspiring creative solutions and forward-thinking approaches for

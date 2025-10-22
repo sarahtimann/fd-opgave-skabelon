@@ -1,5 +1,8 @@
 ---
 import { Image } from "astro:assets";
+import pinkUrl from "../assets/images/pinkjacket.jpg?url";
+import computerUrl from "../assets/images/computer.jpg?url";
+import handsUrl from "../assets/images/hands.jpg?url";
 ---
 
 <section>
@@ -86,9 +89,9 @@ import { Image } from "astro:assets";
   </div>
 
   <div class="img-container">
-    <img class="img-pink" src="/src/assets/images/pinkjacket.jpg" alt="" />
-    <img class="img-computer" src="/src/assets/images/computer.jpg" alt="" />
-    <img class="img-hands" src="/src/assets/images/hands.jpg" alt="" />
+    <img class="img-pink" src={pinkUrl} alt="Pink jacket" />
+    <img class="img-computer" src={computerUrl} alt="Computer" />
+    <img class="img-hands" src={handsUrl} alt="Hands" />
   </div>
 </section>
 
