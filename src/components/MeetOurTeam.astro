@@ -2,6 +2,11 @@
 import employees from "@data/employees.json";
 import { Image } from "astro:assets";
 import sarah from "../data/images/sarah.webp";
+import john from "../data/images/john.webp";
+import daisy from "../data/images/daisy.webp";
+import maya from "../data/images/maya.webp";
+import ryan from "../data/images/ryan.webp";
+import lilly from "../data/images/lilly.webp";
 ---
 
 <section>
@@ -19,27 +24,27 @@ import sarah from "../data/images/sarah.webp";
       <p>{employees[0].description}</p>
     </div>
     <div class="description">
-      <img src="/src/data/images/john.webp" alt="" />
+      <Image src={john} alt="John" />
       <h5>{employees[1].name}</h5>
       <p>{employees[1].description}</p>
     </div>
     <div class="description">
-      <img src="/src/data/images/daisy.webp" alt="" />
+      <Image src={daisy} alt="Daisy" />
       <h5>{employees[2].name}</h5>
       <p>{employees[2].description}</p>
     </div>
     <div class="description">
-      <img src="/src/data/images/maya.webp" alt="" />
+      <Image src={maya} alt="Maya" />
       <h5>{employees[3].name}</h5>
       <p>{employees[3].description}</p>
     </div>
     <div class="description">
-      <img src="/src/data/images/ryan.webp" alt="" />
+      <Image src={ryan} alt="Ryan" />
       <h5>{employees[4].name}</h5>
       <p>{employees[4].description}</p>
     </div>
     <div class="description">
-      <img src="/src/data/images/lilly.webp" alt="" />
+      <Image src={lilly} alt="Lilly" />
       <h5>{employees[5].name}</h5>
       <p>{employees[5].description}</p>
     </div>
