@@ -6,7 +6,7 @@
 
 I dette projekt har jeg forsøgt at løse opgaven så godt som muligt, samtidig med at jeg har haft fokus på at lære undervejs - fremfor blot at sigte efter et perfekt resultat, der ligner det udleverede design.
 
-Jeg har arbejdet med at bruge CSS-selectors fremfor klasser, og jeg har gjort brug af variabler til blandt andet font-størrelser og farver. Derudover har jeg fokuseret på at blive bedre til at importere JSON-filer og anvendt {Image} til at hente billeder til sitet på en mere effektiv måde.
+Jeg har arbejdet med at bruge CSS-selectors fremfor klasser og custom properties, til blandt andet font-størrelser og farver. Derudover har jeg fokuseret på at blive bedre til at importere JSON-filer og anvendt {Image} til at hente billeder til sitet på en mere effektiv måde.
 
 Et andet vigtigt fokus har været at skabe et responsivt design ved hjælp af auto-fit, minmax og repeat. Det har været et personligt mål siden 2. semester at blive bedre til dette, så jeg kan minimere brugen af media queries og det synes jeg, er lykkedes rigtig godt i dette projekt.
 
