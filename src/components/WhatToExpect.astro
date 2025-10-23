@@ -35,7 +35,6 @@ import { Image } from "astro:assets";
     display: grid;
     align-items: flex-start;
     gap: 82px;
-    background-color: var(--bg-light);
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -103,7 +102,7 @@ import { Image } from "astro:assets";
       z-index: -1;
       content: "";
       position: absolute;
-      inset: -70px 230px auto auto;
+      inset: -10px 300px auto auto;
       /* inline-size: calc(var(--square-count) * 1.34rem - 0.67rem); */
       inline-size: calc(
         round(var(--_square-sum), var(--_square-size)) - var(--_square-half)
