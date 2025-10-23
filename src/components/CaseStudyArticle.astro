@@ -4,14 +4,14 @@ import DynamicImage from "@components/helpers/DynamicImage.astro";
 import { Image } from "astro:assets";
 import caseStudy from "@data/caseStudy.json";
 const { caseName, category, date, image, buttonLabel } = caseStudy.caseDetails;
-const className = "billede";
+
 import CaseImage from "@data/images/caseimg.webp";
 import StoryBoard from "@data/images/storyboard.webp";
 ---
 
 <article>
   <header>
-    <Image src={CaseImage} alt={caseName} width={800} height={300} />
+    <Image src={CaseImage} alt={caseName} width={1200} height={300} />
     <div class="case-details">
       <dl>
         <div>
@@ -61,7 +61,6 @@ import StoryBoard from "@data/images/storyboard.webp";
             alt={section.title}
             width={600}
             height={400}
-            class="section-image"
           />
         )}
       </section>
